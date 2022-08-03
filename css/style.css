@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+  font-size: 15px;
+}
+
+body {
+  background-color: hsl(204deg, 43%, 93%);
+}
+body .container {
+  width: 345px;
+  margin: 60px auto 30px auto;
+}
+body .container .box {
+  background-color: white;
+  padding: 20px 30px;
+  border-radius: 10px 10px 0 0;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+body .container .box .title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: hsl(179deg, 62%, 43%);
+  margin-bottom: 20px;
+}
+body .container .box .plan {
+  color: hsl(71deg, 73%, 54%);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+body .container .box .description {
+  color: hsl(218deg, 22%, 67%);
+  margin-bottom: 20px;
+}
+body .container .box:nth-child(2) {
+  border-radius: 0 0 0 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: hsl(179deg, 62%, 43%);
+}
+body .container .box:nth-child(2) p {
+  color: white;
+  margin-bottom: 20px;
+}
+body .container .box:nth-child(2) .title {
+  font-size: 1.3rem;
+}
+body .container .box:nth-child(2) .plan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+body .container .box:nth-child(2) .plan span {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+body .container .box:nth-child(2) .btn {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  border-radius: 5px;
+  border: none;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  background-color: hsl(71deg, 73%, 54%);
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 20px;
+}
+body .container .box:nth-child(3) {
+  border-radius: 0 0 10px 10px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: hsl(179deg, 62%, 45%);
+}
+body .container .box:nth-child(3) .title {
+  font-size: 1.4rem;
+  color: white;
+}
+body .container .box:nth-child(3) .description {
+  color: white;
+  margin-bottom: 20px;
+}
+body .container .box:nth-child(3) .description ul li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+@media (min-width: 1044px) {
+  body .container {
+    margin-top: 150px;
+    width: 700px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  body .container .box {
+    grid-column: 1/span 2;
+    padding: 30px 40px;
+  }
+  body .container .box .title {
+    font-size: 1.8rem;
+  }
+  body .container .box .plan {
+    font-size: 1.5rem;
+  }
+  body .container .box .description {
+    font-size: 1.2rem;
+  }
+  body .container .box:nth-child(2) {
+    border-radius: 0 0 0 10px;
+    grid-column: 1/2;
+  }
+  body .container .box:nth-child(2) .title {
+    font-size: 1.5rem;
+  }
+  body .container .box:nth-child(2) .plan span {
+    font-size: 3rem;
+  }
+  body .container .box:nth-child(2) .btn {
+    padding: 20px 0;
+    font-size: 1.2rem;
+  }
+  body .container .box:nth-child(3) {
+    border-radius: 0 0 10px 0;
+    grid-column: 2/2;
+  }
+  body .container .box:nth-child(3) .title {
+    font-size: 1.6rem;
+  }
+  body .container .box:nth-child(3) .description {
+    font-size: 1.3rem;
+  }
+}/*# sourceMappingURL=style.css.map */

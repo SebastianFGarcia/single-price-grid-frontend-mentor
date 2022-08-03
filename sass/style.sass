@@ -1,0 +1,119 @@
+$Mobile: 375px
+$Desktop: 1044px
+$Cyan: hsl(179, 62%, 43%)
+$Light-Cyan: hsl(179, 62%, 45%)
+$Bright-Yellow: hsl(71, 73%, 54%)
+$Light-Gray: hsl(204, 43%, 93%)
+$Grayish-Blue: hsl(218, 22%, 67%)
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap')
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Karla', sans-serif
+    font-size: 15px
+
+body 
+    background-color: $Light-Gray
+    .container
+        width: $Mobile - 30px
+        margin: 60px auto 30px auto
+        .box
+            background-color: white
+            padding: 20px 30px
+            border-radius: 10px 10px 0 0
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1)
+            .title
+                font-size: 1.5rem
+                font-weight: 700
+                color: $Cyan
+                margin-bottom: 20px
+            .plan
+                color: $Bright-Yellow
+                font-weight: 700
+                margin-bottom: 20px
+            .description
+                color: $Grayish-Blue
+                margin-bottom: 20px
+
+        
+        .box:nth-child(2)
+            border-radius: 0 0  0 0
+            box-shadow: none
+            background-color: $Cyan
+            p 
+                color: white
+                margin-bottom: 20px
+            .title
+                font-size: 1.3rem
+            .plan
+                display: flex
+                align-items: center
+                gap: 10px
+                span
+                    font-size: 2.4rem
+                    font-weight: 700
+            .btn
+                cursor: pointer
+                display: block
+                width: 100%
+                padding: 15px 0
+                border-radius: 5px
+                border: none
+                box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1)
+                background-color: $Bright-Yellow
+                color: white
+                font-weight: 700
+                text-align: center
+                text-decoration: none
+                margin-top: 20px
+        .box:nth-child(3)
+            border-radius: 0 0 10px 10px
+            box-shadow: none
+            background-color: $Light-Cyan
+            .title
+                font-size: 1.4rem
+                color: white
+            .description
+                color: white
+                margin-bottom: 20px
+                ul 
+                    li       
+                        list-style: none
+                        margin-bottom: 5px
+@media (min-width: $Desktop)
+    body
+        .container
+            margin-top: 150px
+            width: 700px
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            .box
+                grid-column: 1 / span 2
+                padding: 30px 40px
+                .title
+                    font-size: 1.8rem
+                .plan
+                    font-size: 1.5rem
+                .description
+                    font-size: 1.2rem
+            .box:nth-child(2)
+                border-radius: 0 0 0 10px
+                grid-column: 1 / 2
+                .title
+                    font-size: 1.5rem
+                .plan
+                    span
+                        font-size: 3rem
+                .btn
+                    padding: 20px 0
+                    font-size: 1.2rem
+            .box:nth-child(3)
+                border-radius: 0 0 10px 0
+                grid-column: 2 / 2
+                .title
+                    font-size: 1.6rem
+                .description
+                    font-size: 1.3rem
